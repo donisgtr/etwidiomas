@@ -23,12 +23,12 @@ img {
   --header-height: 4.5rem;
 
   /* colors */
-  --hue: 1;
+  --hue: 220;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 100% 57%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color: hsl(var(--hue), 79%, 30%);
+  --base-color-second: hsl(var(--hue), 79%, 30%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
-  --title-color: hsl(var(--hue) 41% 10%);
+  --title-color: rgb(202, 6, 6);
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
