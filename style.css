@@ -420,6 +420,7 @@ home .image::before {
 .testimonials-title {
   color: var(--base-color);
 }
+
 .testimonials-name {
   color: var(--body-background);
 }
