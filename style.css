@@ -18,6 +18,11 @@ img {
   height: auto;
 }
 
+.etw-idiomas {
+  width: 10px;
+  height: auto;
+}
+
 /*====  VARIABLES ============================ */
 :root {
   --header-height: 4.5rem;
@@ -25,13 +30,15 @@ img {
   /* colors */
   --hue: 220;
   /* HSL color mode */
-  --base-color: hsl(var(--hue), 79%, 30%);
-  --base-color-second: hsl(var(--hue), 79%, 30%);
-  --base-color-alt: hsl(var(--hue) 57% 53%);
-  --title-color: rgb(202, 6, 6);
-  --text-color: hsl(var(--hue), 79%, 30%);
+  --base-color:hsl(0, 100%, 45%);
+  --base-color-second: hsl(0 0% 98%);
+  --base-color-alt: hsl(0, 100%, 25%);
+  --title-color: hsl(0 0% 98%);
+  --text-color: hsl(0 0% 98%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
+  --body-background: hsl(var(--hue), 79%, 30%);
+  --card-background: hsl(0 0% 98%);
 
   /* fonts */
   --title-font-size: 1.875rem;
@@ -49,7 +56,7 @@ html {
 body {
   font: 400 1rem var(--body-font);
   color: var(--text-color);
-  background: var(--body-color);
+  background: var(--body-background);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -71,9 +78,22 @@ body {
   transition: background 0.3s;
 }
 
+.button-membros {
+  background-color: var(--base-color);
+  color: var(--text-color-light); 
+  padding: 1rem 1rem 1rem 1rem;
+  
+}
+
 .button:hover {
   background: var(--base-color-alt);
 }
+
+.button-membros:hover {
+  background: var(--base-color-alt);
+  color: var(--text-color-light); 
+}
+
 
 .divider-1 {
   height: 1px;
@@ -144,7 +164,12 @@ body {
 /*====  LOGO ============================ */
 .logo {
   font: 700 1.31rem var(--title-font);
-  color: var(--title-color);
+  color: var(--body-background);
+}
+
+.card-logo {
+  font: 700 5rem var(--title-font);
+  color: var(--body-background);
 }
 
 .logo span {
@@ -270,7 +295,8 @@ nav.show div.icon-close {
   position: relative;
 }
 
-#home .image::before {
+/*
+home .image::before {
   content: '';
   height: 100%;
   width: 100%;
@@ -279,16 +305,22 @@ nav.show div.icon-close {
   top: -16.8%;
   left: 16.7%;
   z-index: 0;
-}
+} 
+*/
 
 #home .image img {
   position: relative;
-
 }
 
 #home .image img,
 #home .image::before {
   border-radius: 0.25rem;
+}
+
+.card-tittle {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--body-background)
 }
 
 #home .text {
@@ -307,7 +339,7 @@ nav.show div.icon-close {
 
 /*====  ABOUT ============================ */
 #about {
-  background: white;
+  background: var(--body-background);
 }
 
 #about .container {
@@ -344,6 +376,15 @@ nav.show div.icon-close {
 }
 
 /*====  SERVICES ============================ */
+
+#services {
+  background: var(--card-background);
+}
+
+.card {
+  background: var(--body-background);
+}
+
 .cards.grid {
   gap: 1.5rem;
 }
@@ -354,6 +395,9 @@ nav.show div.icon-close {
   border-bottom: 0.25rem solid var(--base-color);
   border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
+}
+.text-left {
+  text-align: left;
 }
 
 .card i {
@@ -370,7 +414,14 @@ nav.show div.icon-close {
 
 /*====  TESTIMONIALS ============================ */
 #testimonials {
-  background: white;
+  background: var(--card-background);
+}
+
+.testimonials-title {
+  color: var(--base-color);
+}
+.testimonials-name {
+  color: var(--body-background);
 }
 
 #testimonials .container {
@@ -396,7 +447,7 @@ nav.show div.icon-close {
   position: relative;
   text-indent: 1.875rem;
   margin-bottom: 1.5rem;
-  color: var(--title-color);
+  color: var(--base-color);
 }
 
 #testimonials blockquote p span {
