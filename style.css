@@ -18,6 +18,10 @@ img {
   height: auto;
 }
 
+.logo-mundo {
+  margin-top: -13rem;
+}
+
 .etw-idiomas {
   width: 10px;
   height: auto;
@@ -55,6 +59,15 @@ img {
 }
 
 /*===  BASE ============================ */
+
+.text-red {
+  color: var(--base-color); 
+}
+
+.text-blue {
+  color: var(--body-background); 
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -178,7 +191,7 @@ body {
 
 .card-logo {
   font: 700 5rem var(--title-font);
-  color: var(--body-background);
+  color: var(--title-color);
 }
 
 .logo span {
@@ -303,9 +316,7 @@ nav.show div.icon-close {
   color: var(--base-color); 
 }
 
-.text-red {
-  color: var(--base-color); 
-}
+
 
 #home .container {
   margin: 0;
@@ -400,26 +411,41 @@ home .image::before {
 /*====  SERVICES ============================ */
 
 #services {
-  background: var(--card-background);
+  background: var(--home-background);
 }
 
 .card {
-  background: var(--body-background);
+  background: var(--card-background);
+  border-radius: 4rem;
 }
 
 .cards.grid {
   gap: 1.5rem;
 }
 
+.margin-top {
+  margin-top: 10rem;
+}
+
 .card {
   padding: 3.625rem 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  border-bottom: 0.25rem solid var(--base-color);
-  border-radius: 0.25rem 0.25rem 0 0;
+  border: 1rem solid var(--base-color);
+  border-radius: 4rem;
   text-align: center;
 }
+
+.border {
+  border: 0rem solid var(--text-color);
+}
+
+
 .text-left {
   text-align: left;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .card i {
