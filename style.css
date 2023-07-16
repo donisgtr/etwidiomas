@@ -37,7 +37,13 @@ img {
   --text-color: hsl(0 0% 98%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
-  --body-background: hsl(var(--hue), 79%, 30%);
+
+  --body-background: linear-gradient(
+    270deg,
+    hsl(228, 84%, 12%),
+    hsl(0, 84%, 12%)
+    
+  );
   --card-background: hsl(0 0% 98%);
 
   /* fonts */
