@@ -37,13 +37,13 @@ img {
   --text-color: hsl(0 0% 98%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
-
-  --body-background: linear-gradient(
-    270deg,
+  --body-background: hsl(228, 84%, 12%);
+  --home-background: linear-gradient(
+330deg,
     hsl(228, 84%, 12%),
     hsl(0, 84%, 12%)
-    
   );
+
   --card-background: hsl(0 0% 98%);
 
   /* fonts */
@@ -79,15 +79,18 @@ body {
   display: inline-flex;
   align-items: center;
   padding: 0 2rem;
-  border-radius: 0.25rem;
+  border-radius: 1rem;
   font: 500 1rem var(--body-font);
   transition: background 0.3s;
 }
+
+
 
 .button-membros {
   background-color: var(--base-color);
   color: var(--text-color-light); 
   padding: 1rem 1rem 1rem 1rem;
+  border-radius: 5rem;
   
 }
 
@@ -127,7 +130,7 @@ body {
 
 .grid {
   display: grid;
-  gap: 2rem;
+  gap: 0rem;
 }
 
 .section {
@@ -169,7 +172,7 @@ body {
 
 /*====  LOGO ============================ */
 .logo {
-  font: 700 1.31rem var(--title-font);
+  font: 700 1rem var(--title-font);
   color: var(--body-background);
 }
 
@@ -291,6 +294,17 @@ nav.show div.icon-close {
 /*====  HOME ============================ */
 #home {
   overflow: hidden;
+  background: var(--home-background);
+}
+
+.home-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--base-color); 
+}
+
+.text-red {
+  color: var(--base-color); 
 }
 
 #home .container {
@@ -330,8 +344,8 @@ home .image::before {
 }
 
 #home .text {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   text-align: center;
 }
 
@@ -356,6 +370,7 @@ home .image::before {
   position: relative;
 }
 
+/*
 #about .image::before {
   content: '';
   height: 100%;
@@ -366,6 +381,7 @@ home .image::before {
   left: -33%;
   z-index: 0;
 }
+*/
 
 #about .image img {
   position: relative;
@@ -654,11 +670,12 @@ footer .social a:hover {
 
   #home .image {
     order: 1;
+    max-width: 105rem;
   }
 
   #home .text {
     order: 0;
-    max-width: 24rem;
+    max-width: 35rem;
     text-align: left;
   }
 
