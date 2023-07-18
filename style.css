@@ -70,6 +70,11 @@ img {
   color: var(--body-background); 
 }
 
+.text-green {
+  color: var(--green-color-alt); 
+}
+
+
 .title-values {
   font-size: 1.8rem;
   font-weight: 700;
@@ -544,6 +549,22 @@ home .image::before {
   margin-right: 0.5rem;
 }
 
+#check img {
+  width: 1rem;
+  height: 1rem;
+  object-fit: cover;
+}
+
+
+
+#logo img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  margin-right: 0.1rem;
+}
+
+
 /* swiper */
 .swiper-slide {
   height: auto;
@@ -741,8 +762,8 @@ footer .social a:hover {
   }
 
   .card {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   /* testimonials */
@@ -784,7 +805,11 @@ footer .social a:hover {
     --subtitle-font-size: 1.125rem;
   }
 }
-/* medium devices: 767 > */
+
+
+.margin-top-card {
+  margin-top: 5rem;
+}
 
 .margin-top-card {
   margin-top: 5rem;
