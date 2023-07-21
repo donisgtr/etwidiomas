@@ -452,10 +452,6 @@ home .image::before {
   gap: 1.5rem;
 }
 
-
-
-
-
 .card {
   padding: 3.625rem 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
@@ -679,6 +675,22 @@ footer .social a:hover {
 @media (min-width: 1200px) {
   /* reusable classes */
 
+  #home .container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  #home .image {
+    order: 1;
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 35rem;
+    text-align: left;
+  }
+
 
   .container {
     max-width: 1120px;
@@ -734,21 +746,7 @@ footer .social a:hover {
   }
 
   /* home */
-  #home .container {
-    grid-auto-flow: column;
-    justify-content: space-between;
-    margin: 0 auto;
-  }
-
-  #home .image {
-    order: 1;
-  }
-
-  #home .text {
-    order: 0;
-    max-width: 35rem;
-    text-align: left;
-  }
+  
 
   /* about */
   #about .container {
