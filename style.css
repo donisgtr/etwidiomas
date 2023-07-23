@@ -399,18 +399,28 @@ home .image::before {
 
 /*====  ABOUT ============================ */
 #about {
-  background: var(--body-background);
+  background: var(--home-background);
+}
+
+.about-section {
+  padding: 10rem 0;
+  gap: 5rem;
+}
+
+.about-section img {
+  margin-top: 2rem;
 }
 
 #about .container {
   margin: 0;
 }
 
+
+/*
 #about .image {
   position: relative;
 }
 
-/*
 #about .image::before {
   content: '';
   height: 100%;
@@ -421,7 +431,7 @@ home .image::before {
   left: -33%;
   z-index: 0;
 }
-*/
+
 
 #about .image img {
   position: relative;
@@ -431,6 +441,7 @@ home .image::before {
 #about .image::before {
   border-radius: 0.25rem;
 }
+*/
 
 #about .text {
   margin-left: 1.5rem;
@@ -691,7 +702,6 @@ footer .social a:hover {
     text-align: left;
   }
 
-
   .container {
     max-width: 1120px;
     margin-left: auto;
@@ -700,6 +710,9 @@ footer .social a:hover {
 
   .section {
     padding: 10rem 0;
+  }
+  .about-section {
+    padding: 5rem 0;
   }
 
   .section header,
