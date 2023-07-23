@@ -258,7 +258,6 @@ nav ul li a::after {
   content: '';
   width: 0%;
   height: 2px;
-  background: var(--base-color);
 
   position: absolute;
   left: 0;
@@ -497,7 +496,7 @@ home .image::before {
 
 /*====  TESTIMONIALS ============================ */
 #testimonials {
-  background: var(--card-background);
+  background: var(--home-background);
 }
 
 .testimonials-title {
@@ -525,6 +524,7 @@ home .image::before {
   padding: 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-radius: 0.25rem;
+  background-color: #fff;
 }
 
 #testimonials blockquote p {
@@ -584,8 +584,9 @@ home .image::before {
 }
 
 .swiper-pagination-bullet-active {
-  background: var(--base-color);
+  background: #fff
 }
+
 
 /*====  CONTACT ============================ */
 #contact .grid {
@@ -717,7 +718,7 @@ footer .social a:hover {
 
   .section header,
   #testimonials header {
-    max-width: 32rem;
+    max-width: 40rem;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
