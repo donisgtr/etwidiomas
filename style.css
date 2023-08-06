@@ -568,7 +568,7 @@ home .image::before {
 
 #logo img {
   width: 10rem;
-  height: 1rem;
+  height: 10rem;
   object-fit: cover;
   margin-right: 0.1rem;
 }
