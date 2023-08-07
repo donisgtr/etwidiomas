@@ -186,6 +186,9 @@ body {
 
 .section header {
   margin-bottom: 15rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section header strong {
