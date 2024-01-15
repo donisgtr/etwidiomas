@@ -709,7 +709,7 @@ footer .social a:hover {
   }
 
   .container {
-    max-width: 1120px;
+    max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -775,7 +775,7 @@ footer .social a:hover {
 
   /* services */
   .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .card {
@@ -846,7 +846,7 @@ footer .social a:hover {
   }
 
   .margin-top-card {
-    margin-top: -5rem;
+    margin-top: 0rem;
   }
 
   .margin-top-end-card {
